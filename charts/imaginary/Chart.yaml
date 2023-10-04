@@ -1,7 +1,7 @@
 apiVersion: v2
 name: imaginary
 description: >
-  A Helm chart for h2non/imagoinary.
+  A Helm chart for h2non/imaginary.
     See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
 type: application
 version: 0.0.1
