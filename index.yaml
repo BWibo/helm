@@ -3,6 +3,30 @@ entries:
   imaginary:
   - apiVersion: v2
     appVersion: 20230916_091439-latest
+    created: "2023-10-04T16:01:17.398618823Z"
+    description: 'A Helm chart for h2non/imaginary.   See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md)
+      for changes. '
+    digest: f97a9679992b601b7e1d635314e95dd760b1e9b30282810f77904353b676f161
+    home: https://github.com/BWibo/helm/charts/imaginary
+    keywords:
+    - h2non
+    - imaginary
+    - image processing
+    kubeVersion: '>= 1.23.0-0'
+    maintainers:
+    - name: Bruno Willenborg
+      url: https://github.com/BWibo
+    name: imaginary
+    sources:
+    - https://github.com/h2non/imaginary
+    - https://hub.docker.com/r/nextcloud/aio-imaginary
+    - https://github.com/nextcloud/all-in-one
+    type: application
+    urls:
+    - https://github.com/BWibo/helm/releases/download/imaginary-0.0.2/imaginary-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: 20230916_091439-latest
     created: "2023-10-04T10:52:31.28329739Z"
     description: 'A Helm chart for h2non/imagoinary.   See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md)
       for changes. '
@@ -25,4 +49,4 @@ entries:
     urls:
     - https://github.com/BWibo/helm/releases/download/imaginary-0.0.1/imaginary-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-04T10:52:31.28330169Z"
+generated: "2023-10-04T16:01:17.398625923Z"
