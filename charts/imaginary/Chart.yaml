@@ -4,7 +4,7 @@ description: >
   A Helm chart for h2non/imaginary.
     See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
 type: application
-version: 0.0.1
+version: 0.0.2
 appVersion: "20230916_091439-latest"
 kubeVersion: ">= 1.23.0-0"
 
