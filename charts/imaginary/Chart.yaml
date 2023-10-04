@@ -13,8 +13,7 @@ keywords:
   - imaginary
   - image processing
 
-home:
- -  https://github.com/BWibo/helm/charts/imaginary
+home: https://github.com/BWibo/helm/charts/imaginary
 
 maintainers:
   - name: Bruno Willenborg
