@@ -48,7 +48,7 @@ Kubernetes: `>= 1.23.0-0`
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
-| replicaCount | int | `1` |  |
+| replicaCount | int | `1` | Replica count |
 | resources | object | `{}` |  |
 | securityContext.capabilities.add[0] | string | `"CAP_SYS_NICE"` |  |
 | service.port | int | `9000` |  |
