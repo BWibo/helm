@@ -7,28 +7,28 @@ annotations:
 apiVersion: v2
 appVersion: 20230916_091439-latest
 dependencies:
-- name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
-  tags:
-  - bitnami-common
-  version: 2.x.x
+  - name: common
+    repository: oci://registry-1.docker.io/bitnamicharts
+    tags:
+      - bitnami-common
+    version: 2.x.x
 description: >
   A Helm chart for h2non/imaginary. See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
 home: https://github.com/BWibo/helm/charts/imaginary
 keywords:
-- h2non
-- imaginary
-- image processing
-- nextcloud
-- preview
-kubeVersion: '>= 1.23.0-0'
+  - h2non
+  - imaginary
+  - image processing
+  - nextcloud
+  - preview
+kubeVersion: ">= 1.23.0-0"
 maintainers:
-- name: Bruno Willenborg
-  url: https://github.com/BWibo
+  - name: Bruno Willenborg
+    url: https://github.com/BWibo
 name: imaginary
 sources:
-- https://github.com/h2non/imaginary
-- https://hub.docker.com/r/nextcloud/aio-imaginary
-- https://github.com/nextcloud/all-in-one
+  - https://github.com/h2non/imaginary
+  - https://hub.docker.com/r/nextcloud/aio-imaginary
+  - https://github.com/nextcloud/all-in-one
 type: application
 version: 0.0.4
