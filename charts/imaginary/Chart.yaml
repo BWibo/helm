@@ -1,25 +1,34 @@
+annotations:
+  category: Image processing
+  images: |
+    - name: aio-imaginary
+      image: https://hub.docker.com/r/nextcloud/aio-imaginary
+  licenses: Apache-2.0
 apiVersion: v2
-name: imaginary
+appVersion: 20230916_091439-latest
+dependencies:
+- name: common
+  repository: oci://registry-1.docker.io/bitnamicharts
+  tags:
+  - bitnami-common
+  version: 2.x.x
 description: >
-  A Helm chart for h2non/imaginary.
-    See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
-type: application
-version: 0.0.2
-appVersion: "20230916_091439-latest"
-kubeVersion: ">= 1.23.0-0"
-
-keywords:
-  - h2non
-  - imaginary
-  - image processing
-
+  A Helm chart for h2non/imaginary. See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
 home: https://github.com/BWibo/helm/charts/imaginary
-
+keywords:
+- h2non
+- imaginary
+- image processing
+- nextcloud
+- preview
+kubeVersion: '>= 1.23.0-0'
 maintainers:
-  - name: Bruno Willenborg
-    url: https://github.com/BWibo
-
+- name: Bruno Willenborg
+  url: https://github.com/BWibo
+name: imaginary
 sources:
-  - https://github.com/h2non/imaginary
-  - https://hub.docker.com/r/nextcloud/aio-imaginary
-  - https://github.com/nextcloud/all-in-one
+- https://github.com/h2non/imaginary
+- https://hub.docker.com/r/nextcloud/aio-imaginary
+- https://github.com/nextcloud/all-in-one
+type: application
+version: 0.0.3
