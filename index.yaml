@@ -9,6 +9,44 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 20230916_091439-latest
+    created: "2023-10-08T16:54:17.024118958Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: 'A Helm chart for h2non/imaginary. See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md)
+      for changes. '
+    digest: 09d76ac4f483b10d85b2c0667ca000ba58124a3173a590be683bd2756fa68399
+    home: https://github.com/BWibo/helm/charts/imaginary
+    keywords:
+    - h2non
+    - imaginary
+    - image processing
+    - nextcloud
+    - preview
+    kubeVersion: '>= 1.23.0-0'
+    maintainers:
+    - name: Bruno Willenborg
+      url: https://github.com/BWibo
+    name: imaginary
+    sources:
+    - https://github.com/h2non/imaginary
+    - https://hub.docker.com/r/nextcloud/aio-imaginary
+    - https://github.com/nextcloud/all-in-one
+    type: application
+    urls:
+    - https://github.com/BWibo/helm/releases/download/imaginary-0.0.4/imaginary-0.0.4.tgz
+    version: 0.0.4
+  - annotations:
+      category: Image processing
+      images: |
+        - name: aio-imaginary
+          image: https://hub.docker.com/r/nextcloud/aio-imaginary
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 20230916_091439-latest
     created: "2023-10-08T16:54:01.002625841Z"
     dependencies:
     - name: common
@@ -87,4 +125,4 @@ entries:
     urls:
     - https://github.com/BWibo/helm/releases/download/imaginary-0.0.1/imaginary-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-08T16:54:01.002641642Z"
+generated: "2023-10-08T16:54:17.024365859Z"
