@@ -78,3 +78,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# -- Overwrite args. Note: If this is set, `extraArgs` has no effect.
+args: []
+
+# -- Additional args. Note: If `args` is this, this has no effect.
+extraArgs: []

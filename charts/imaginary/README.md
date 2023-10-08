@@ -31,10 +31,12 @@ Kubernetes: `>= 1.23.0-0`
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` |  |
+| args | list | `[]` | Overwrite args. Note: If this is set, `extraArgs` has no effect. |
 | autoscaling.enabled | bool | `false` |  |
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
+| extraArgs | list | `[]` | Additional args. Note: If `args` is this, this has no effect. |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
 | image.repository | string | `"nextcloud/aio-imaginary"` |  |

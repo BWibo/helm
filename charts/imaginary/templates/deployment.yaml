@@ -37,8 +37,14 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
+          {{- if .Values.args }}
+          args: {{- include "common.tplvalues.render" (dict "value" .Values.args "context" $) | nindent 12 }}
+          {{- else }}
           args:
-            - "-enable-url-source"
+            {{- if .Values.extraArgs }}
+            {{- include "common.tplvalues.render" (dict "value" .Values.extraArgs "context" $) | nindent 12 }}
+            {{- end }}
+          {{- end }}
           livenessProbe:
             httpGet:
               path: /
