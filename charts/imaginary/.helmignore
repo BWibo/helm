@@ -22,5 +22,6 @@
 *.tmproj
 .vscode/
 
-# CHANGELOG
+# Docs
 CHANGELOG.md
+README.md
