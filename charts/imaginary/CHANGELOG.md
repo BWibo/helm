@@ -10,6 +10,24 @@ For releases `< 1.0.0` minor version step indicate breaking changes.
 
 ## [Unreleased]
 
+## [imaginary-0.0.5] - 2023-10-11
+
+### Breaking changes
+
+### Added
+
+- Allow custom startup, readiness, liveness probes
+
+### Changed
+
+### Removed
+
+### Fixed
+
+### Security
+
+### Deprecated
+
 ## [template] - YYYY-MM-DD
 
 ### Breaking changes
@@ -30,6 +48,6 @@ For releases `< 1.0.0` minor version step indicate breaking changes.
 
 [Unreleased]: https://github.com/bwibo/helm/compare/imaginary-0.0.2...HEAD
 
-[imaginary-0.0.2]: https://github.com/bwibo/helm/compare/imaginary-0.0.1...imaginary-0.0.2
+[imaginary-0.0.5]: https://github.com/bwibo/helm/compare/imaginary-0.0.1...imaginary-0.0.5
 [imaginary-0.0.1]: https://github.com/bwibo/helm/releases/tag/imaginary-0.0.1
 [template]: https://keepachangelog.com/en/1.0.0/

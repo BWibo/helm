@@ -1,6 +1,6 @@
 # imaginary
 
-![Version: 0.0.4](https://img.shields.io/badge/Version-0.0.4-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 20230916_091439-latest](https://img.shields.io/badge/AppVersion-20230916_091439--latest-informational?style=flat-square)
+![Version: 0.0.5](https://img.shields.io/badge/Version-0.0.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 20230916_091439-latest](https://img.shields.io/badge/AppVersion-20230916_091439--latest-informational?style=flat-square)
 
 A Helm chart for h2non/imaginary. See [CHANGELOG](https://github.com/BWibo/helm/blob/main/charts/imaginary/CHANGELOG.md) for changes.
 
@@ -36,6 +36,9 @@ Kubernetes: `>= 1.23.0-0`
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
 | autoscaling.targetCPUUtilizationPercentage | int | `80` |  |
+| customLivenessProbe | object | `{}` | Overwrite default liveness probe |
+| customReadinessProbe | object | `{}` | Overwrite default readiness probe |
+| customStartupProbe | object | `{}` | Overwrite default startup probe |
 | extraArgs | list | `[]` | Additional args. Note: If `args` is this, this has no effect. |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
@@ -49,10 +52,12 @@ Kubernetes: `>= 1.23.0-0`
 | ingress.hosts[0].paths[0].path | string | `"/"` |  |
 | ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
 | ingress.tls | list | `[]` |  |
+| livenessProbe | object | `{"enabled":true,"httpGet":{"path":"/health","port":"http"}}` | Liveness probe |
 | nameOverride | string | `""` |  |
 | nodeSelector | object | `{}` |  |
 | podAnnotations | object | `{}` |  |
 | podSecurityContext | object | `{}` |  |
+| readinessProbe | object | `{"enabled":true,"httpGet":{"path":"/health","port":"http"}}` | Readiness probe |
 | replicaCount | int | `1` | Replica count |
 | resources | object | `{}` |  |
 | securityContext.capabilities.add[0] | string | `"CAP_SYS_NICE"` |  |
@@ -61,6 +66,7 @@ Kubernetes: `>= 1.23.0-0`
 | serviceAccount.annotations | object | `{}` |  |
 | serviceAccount.create | bool | `false` |  |
 | serviceAccount.name | string | `""` |  |
+| startupProbe | object | `{"enabled":true,"httpGet":{"path":"/health","port":"http"}}` | Startup probe |
 | tolerations | list | `[]` |  |
 
 ----------------------------------------------

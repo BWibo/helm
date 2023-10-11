@@ -31,4 +31,4 @@ sources:
   - https://hub.docker.com/r/nextcloud/aio-imaginary
   - https://github.com/nextcloud/all-in-one
 type: application
-version: 0.0.4
+version: 0.0.5

@@ -84,3 +84,31 @@ args: []
 
 # -- Additional args. Note: If `args` is this, this has no effect.
 extraArgs: []
+
+# -- Overwrite default liveness probe
+customLivenessProbe: {}
+# -- Overwrite default readiness probe
+customReadinessProbe: {}
+# -- Overwrite default startup probe
+customStartupProbe: {}
+
+# -- Liveness probe
+livenessProbe:
+  enabled: true
+  httpGet:
+    path: /health
+    port: http
+
+# -- Readiness probe
+readinessProbe:
+  enabled: true
+  httpGet:
+    path: /health
+    port: http
+
+# -- Startup probe
+startupProbe:
+  enabled: true
+  httpGet:
+    path: /health
+    port: http
